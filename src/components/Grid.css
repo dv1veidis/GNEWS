@@ -1,0 +1,48 @@
+body{
+    background-color: lightblue;
+}
+
+.boxItem{
+    background-color: aqua;
+    border-radius: 10px 10px 10px 10px;
+    overflow-y: hidden;
+    height: flex-grow;
+    max-height: 35vh;
+    min-height: 30vh;
+    -webkit-box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
+    box-shadow: 0px 12px 18px -6px rgba(0,0,0,0.3);
+    margin: 20px;
+}
+
+.grid{
+    min-height: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.grid > div {
+    flex-basis: calc(33.33% - 40px);
+}
+
+.boxItem-img {
+    width:50%;
+    object-fit: cover;
+    justify-content:center;
+    display:block;
+    margin: auto;
+}
+
+.truncate{ 
+    width: 480px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  a {
+    text-decoration: none; 
+    color: black; 
+}
